@@ -1,0 +1,110 @@
+.container {
+    min-height: 100vh;
+    width: 100%;
+
+    display: grid;
+    grid-template-rows: minmax(min-content, 6rem) 1fr minmax(min-content, 3rem);
+
+    // background: linear-gradient(to bottom right, rgb(12, 90, 60), rgb(50, 12, 170));
+    background: linear-gradient(to left bottom, rgb(50, 90, 152), rgb(4, 126, 55));
+    color: white;
+}
+
+.section-main {
+    max-width: 120rem;
+    min-width: 60rem;
+    margin: 0 auto;
+}
+
+%heading {
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.heading {
+    &-1 {
+        @extend %heading;
+        font-size: 4rem;
+    }
+
+    &-2 {
+        @extend %heading;
+        font-size: 3rem;
+    }
+
+    &-3 {
+        @extend %heading;
+        font-size: 2.5rem;
+    }
+
+    &-4 {
+        @extend %heading;
+        font-size: 2rem;
+    }
+}
+
+.form {
+    border: 1px solid white;
+    max-width: 70rem;
+    background-color: white;
+    padding: 2rem;
+
+    &__heading {
+        color: black;
+    }
+
+    &__group {
+        width: 100%;
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__input {
+        font-size: inherit;
+        font-family: inherit;
+        font-weight: inherit;
+        width: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        padding: 1rem;
+        color: black;
+
+        &:focus {
+            outline: none;
+            border-color: rgb(50, 90, 152);
+        }
+    }
+
+    &__textarea {
+        resize: none;
+    }
+
+    &__btn {
+        font-size: inherit;
+        font-family: inherit;
+        font-weight: 700;
+        width: 100%;
+        padding: 1rem 2rem;
+        background: rgb(4, 126, 55);
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
+        }
+
+        &:active {
+            transform: translateY(-1px);
+            box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
+        }
+
+        &:focus {
+            outline: none;
+            background-color: rgba(4, 126, 55, 0.8);
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.section-footer {
+    min-height: min-content;
+    background-color: rgb(10, 50, 109);
+    color: white;
+    text-align: center;
+    padding: 0.4rem 0;
+    font-size: 1.2rem;
+
+    .author {
+        font-style: italic;
+    }
+
+    span {
+        display: inline-block;
+        margin: 0 0.5rem;
+    }
+}

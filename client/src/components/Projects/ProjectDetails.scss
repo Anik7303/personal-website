@@ -1,0 +1,46 @@
+.project {
+    &__details {
+        grid-column: 1 / -1;
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.6s ease, opacity 0.1s ease-out;
+
+        &.active {
+            opacity: 1;
+            visibility: visible;
+            height: auto;
+
+            border: none;
+            border-top: 1px solid rgba(0, 0, 0, 0.2);
+            margin-top: 1rem;
+            padding: 2rem;
+        }
+    }
+
+    &__repo {
+        &-names {
+            font-size: 1.2rem;
+
+            span {
+                border: 1px solid black;
+                border-bottom: none;
+                padding: 2px 8px;
+                cursor: pointer;
+            }
+        }
+
+        &-link {
+            border: 1px solid black;
+            padding: 0.5rem 1rem;
+            font-size: 1.3rem;
+            letter-spacing: 1px;
+        }
+    }
+
+    &__description {
+        border: none;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+        margin-top: 1rem;
+    }
+}

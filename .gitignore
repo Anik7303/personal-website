@@ -7,6 +7,9 @@
 # environment variables
 .env
 
+# keys
+keys/dev.js
+
 # misc
 package-lock.json
 debug.log

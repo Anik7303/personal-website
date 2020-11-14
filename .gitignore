@@ -1,0 +1,13 @@
+# vscode configs
+.vscode
+
+# module files
+/node_modules
+
+# environment variables
+.env
+
+# misc
+package-lock.json
+debug.log
+
